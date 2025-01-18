@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reflect - تسجيل الدخول</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Reflect</h1>
+  </header>
+
+  <main>
+    <section id="auth-section">
+      <h2>تسجيل الدخول أو إنشاء حساب</h2>
+      <form id="register-form">
+        <label for="phone">رقم الهاتف:</label>
+        <input type="text" id="phone" placeholder="أدخل رقم هاتفك" required>
+        
+        <label for="otp">رمز التحقق (OTP):</label>
+        <input type="text" id="otp" placeholder="أدخل رمز التحقق" required>
+        
+        <button type="button" id="send-otp">إرسال رمز التحقق</button>
+        <button type="submit">تسجيل الدخول</button>
+      </form>
+    </section>
+
+    <section id="profile-section" style="display: none;">
+      <h2>ملفك الشخصي</h2>
+      <div>
+        <label for="profile-pic">الصورة الشخصية:</label>
+        <input type="file" id="profile-pic">
+      </div>
+      <div>
+        <label for="cover-pic">صورة الغلاف:</label>
+        <input type="file" id="cover-pic">
+      </div>
+      <div>
+        <label for="bio">نبذة شخصية:</label>
+        <textarea id="bio" placeholder="أدخل نبذة عنك"></textarea>
+      </div>
+      <button type="button" id="save-profile">حفظ التعديلات</button>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Reflect. جميع الحقوق محفوظة.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
